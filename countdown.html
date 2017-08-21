@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Countdown</title>
+</head>
+<body>
+
+<span id="days"></span>
+<span id="hours"></span>
+<span id="minutes"></span>
+<span id="seconds"></span>
+
+
+<script src="countdown.js"></script>
+
+<script>
+	var callbackFunction = function () {
+		console.log('Finish!');
+	}
+	//MESEC DAN GODINA
+	countdown('01/01/2018 00:00:00 AM', ['days', 'hours', 'minutes', 'seconds'], callbackFunction
+			/*function(){
+				console.log('Finish!');
+			}*/
+		);
+
+</script>
+
+</body>
+</html>
